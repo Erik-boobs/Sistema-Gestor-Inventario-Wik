@@ -1,0 +1,84 @@
+
+#espacio3{
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+ /*Botones de administración*/
+#boton {
+    font-size: 14px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+   
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    padding-top: 10px;
+   
+  }
+  
+  #boton:focus,
+  #boton:hover {
+    color: grey;
+  }
+  
+  #boton:focus:after,
+  #boton:hover:after {
+    width: 98%;
+    left: 0%;
+  }
+  
+  #boton:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #933dde;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+
+
+ /*Botones de con iconos*/
+  .button {
+   
+    display: flex;
+    padding: 6px 25px;
+    cursor: pointer;
+    gap: 1px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+    background: linear-gradient(15deg, #880088, #aa2068, #cc3fc0, #933dde, #b733f0, #653dde, #cc3fb7, #aa209a, #880088) no-repeat;
+    background-size: 300%;
+    color: #fff;
+    border: none;
+    background-position: left center;
+    box-shadow: 0 30px 10px -20px rgba(0,0,0,.2);
+    transition: background .3s ease;
+  }
+  
+  .button:hover {
+    background-size: 320%;
+    background-position: right center;
+  }
+  
+  .button:hover svg {
+    fill: #fff;
+  }
+  
+  .button svg {
+    width: 23px;
+    fill: #a133f0;
+    transition: .3s ease;
+  }

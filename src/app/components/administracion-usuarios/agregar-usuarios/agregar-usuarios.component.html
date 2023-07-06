@@ -1,0 +1,75 @@
+<!--Autor: Erik Daniel ME-->
+<div id="formulario" >
+
+  <!--Card del formulario-->
+    <div class="card">
+      <!--Cabecera-->
+      <div class="card-header">
+        <div class="text-header">Agregar usuario</div>
+      </div>
+      <!--Cuerpo de la card-->
+      <div class="card-body">
+        <form >
+          <!--nombre-->
+          <div class="input">
+            <input autocomplete="off" type="text" id="nombres" name="nombres"
+              required>
+            <label for="nombres">Nombres</label>
+          </div>
+          <!--Logo-->
+          <div class="input">
+            <input autocomplete="off" type="text" id="appP" name="appP"
+              required>
+            <label for="appP">Apellido paterno</label>
+          </div>
+
+          <div class="input">
+            <input autocomplete="off" type="text" id="appM" name="appM"
+              required>
+            <label for="appM">Apellido materno</label>
+          </div>
+          <!--Telefono-->
+          <div class="input">
+            <input autocomplete="off" type="number" id="tel" name="tel"
+              required>
+            <label for="tel">Telefono</label>
+          </div>
+          <!--Email-->
+          <div class="input">
+            <input autocomplete="off" type="text" id="email" name="email"
+              required>
+            <label for="email">Email</label>
+          </div>
+          <div class="input">
+            <input autocomplete="off" type="url" id="logo" name="logo"
+              required>
+            <label for="logo">Imagen</label>
+          </div>
+         <!--Div del dropdown-->
+          <div aria-label="Default select example" id="dropdown">
+            <!--Label del dropdown-->
+            <label id="rol">Rol</label>
+            <!--El select es la caja de texto y las option son las opciones del dropdown-->
+            <select style="border: 20px;border: 1px solid #999;"  id="rol" name="rol"  required>
+            <option class="form-select" value="" disable selected>-- Selecciona un rol</option>
+            <option class="form-select" > Opción 1</option>
+            <option class="form-select" > Opción 2</option>
+            </select>
+          </div>
+         
+          
+          <div class="botones" style="display: flex;justify-content: space-evenly;">
+            <!--Crear-->
+            <button class="btn btn-outline-success" style="margin-right: 2px; width: 100px;"
+            >Guardar</button>
+            <!--Cancelar-->
+          </div>
+
+         
+          
+      
+
+        </form>
+      </div>
+    </div>
+  </div>

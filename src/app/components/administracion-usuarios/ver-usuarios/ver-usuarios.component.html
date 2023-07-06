@@ -1,0 +1,97 @@
+<!--Autor: Erik Daniel ME-->
+
+<!--Barra de navegación que esta por debajo del componente del navigation-->
+<nav class="navbar" style="padding-top: 20px;">
+    <div class="container-fluid">
+
+      <!--Botón de que desplega el menú-->
+      <button class="navbar-toggler" style="color: #933dde; border: 1px solid;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon" style="color: #933dde;"></span>
+      </button>
+
+      <!--Menú desplegable-->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" routerLink="/Reportes-venta">Reportes de venta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Asignar-usuarios">Asignar usuarios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!--Botón para volver-->
+      <button  id="boton" routerLink="/Administracion-de-usuarios">
+        <i class="fa-solid fa-arrow-left" style="padding-right: 3px;"></i> Volver
+    </button>
+    </div>
+  </nav>
+
+
+<!--Componente que contiene la card de la información del usuario-->
+<div class="card-group"  >
+    <div class="card"> <!--Card-->
+      <div class="container text-center">
+          <div class="row">
+  
+            <div class="col-sm-4"><!--Columna izquierda-->
+              <img  width="350px" height="200px" id="img"><!--Imagen del perfil del usuario-->
+            </div>
+  
+            <div class="col-sm-8"><!--Columna derecha-->
+              <div class="card-body" >
+                  <form > <!--Formulario-->
+                      <!--nombre-->
+                      <div class="input">
+                        <input autocomplete="off" type="text" id="nombre" name="nombre"
+                          required value="Erik Daniel">
+                        <label for="nombreProveedor">Nombres</label>
+                      </div>
+                      <!--Apellido Paterno-->
+                      <div class="input">
+                        <input autocomplete="off" type="text" id="apellidoP" name="apellidoP"
+                          required value="Méndez">
+                        <label for="Apellido paterno">Apellido paterno</label>
+                      </div>
+            <!-- Apellido Materno-->
+                      <div class="input">
+                        <input autocomplete="off" type="text" id="apellidoM" name="apellidoM"
+                          required value="Enríquez">
+                        <label for="Apellido materno">Apellido materno</label>
+                      </div>
+            
+                      <!--Fecha de nacimiento-->
+                      <div class="input">
+                        <input autocomplete="off" type="date" id="fecha" name="fecha"
+                          required value="2001-10-06">
+                        <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+                      </div>
+            
+                      <!--Telefono-->
+                      <div class="input">
+                        <input autocomplete="off" type="number" id="telefono" name="telefono"
+                          required value="4181552063">
+                        <label for="Telefono">Telefono</label>
+                      </div>
+            
+                      <!--Email-->
+                      <div class="input">
+                        <input autocomplete="off" type="email" id="email" name="email"
+                          required value="erikmendex840@gmail.com">
+                        <label for="Correo Electrónico">Correo Electrónico</label>
+                      </div>
+                    </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  
+  
+    

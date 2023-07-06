@@ -1,0 +1,77 @@
+<!--
+-- Autor: Erik Daniel ME
+-- Pantalla del perfil del usuario
+-->
+<div class="card-group"  ><!--Estilo del acomodo de las cards-->
+  <div class="card"> <!--Card-->
+    <div class="container text-center">
+        <div class="row">
+
+          <!--Columna izquierda donde se encuentra la imagen-->
+          <div class="col-sm-4">
+            <img  width="350px" height="200px" id="img"> <!--Imagen del perfil usuario-->
+          </div>
+
+          <!--Columna derecha donde se encuentra la información del usuario-->
+          <div class="col-sm-8">
+            <!--El formulario esta dentro de una div que contiene dentro de si un formulario-->
+            <div class="card-body" >
+              <!--Formulario-->  
+              <form >
+                    <!--nombres-->
+                    <div class="input">
+                      <input autocomplete="off" type="text" id="nombre" name="nombre"
+                        required value="Erik Daniel">
+                      <label for="nombreProveedor">Nombres</label>
+                    </div>
+
+                    <!--Apellido Paterno-->
+                    <div class="input">
+                      <input autocomplete="off" type="text" id="apellidoP" name="apellidoP"
+                        required value="Méndez">
+                      <label for="Apellido paterno">Apellido paterno</label>
+                    </div>
+
+                    <!-- Apellido Materno-->
+                    <div class="input">
+                      <input autocomplete="off" type="text" id="apellidoM" name="apellidoM"
+                        required value="Enríquez">
+                      <label for="Apellido materno">Apellido materno</label>
+                    </div>
+          
+                    <!--Fecha de nacimiento-->
+                    <div class="input">
+                      <input autocomplete="off" type="date" id="fecha" name="fecha"
+                        required value="2001-10-06">
+                      <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+                    </div>
+          
+                    <!--Telefono-->
+                    <div class="input">
+                      <input autocomplete="off" type="number" id="telefono" name="telefono"
+                        required value="4181552063">
+                      <label for="Telefono">Telefono</label>
+                    </div>
+          
+                    <!--Email-->
+                    <div class="input">
+                      <input autocomplete="off" type="email" id="email" name="email"
+                        required value="erikmendex840@gmail.com">
+                      <label for="Correo Electrónico">Correo Electrónico</label>
+                    </div>
+                  </form> <!--Fin del formulario-->
+          </div> <!--Fin del div donde se encuentra el formulario-->
+        </div> <!--Fin del div de la columna derecha-->
+    </div>
+
+    <!-- Componente donde se encuentra el boton-->
+    <div class="botones" style="display: flex;justify-content: space-evenly; padding-bottom: 20px;">
+      <!--Botón-->
+      <button class="btn btn-outline-success" style=" width: auto;" routerLink="/Editar-usuarios"
+      >Editar información</button>
+    </div>
+    
+</div>
+
+
+  

@@ -1,0 +1,46 @@
+<!-- Autor: Erik Daniel Méndez Enríquez -->
+<!-- Componente donde se encuentra el logo y el titulo-->
+<div style="display: flex; ">
+    <img src="../../../assets/img/wik_logo.png" alt="logo" style="height: 130px; width: 270px; padding-left: 100px;">
+    <h2  id="titulo"> Administración de inventario</h2>
+    </div>
+
+<!--Botones del tab-->
+<!--Lista hotizontal con los botones-->
+    <ul class="nav nav-tabs" id="myTab" role="tablist" style="padding-top: 10px;">
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Administración de inventario</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Agregar productos</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Asignar productos</button>
+        </li>
+      </ul>
+
+        <!--Contenido de los tabs-->
+      <!--
+        -- Este componente tiene una propiedad de collapse, la cuál mostrará el 
+        -- contenido que deseemos mostrar al darle clic al botón sin cambiar de pantalla
+      -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <app-inventario></app-inventario> <!-- Esta es una etiqueta la cuál mostrar lo que contenga el componente hijo-->
+        </div>
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <app-agregar-producto></app-agregar-producto>
+        </div>
+
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <app-asignar-productos></app-asignar-productos>
+        </div>
+        
+      </div>
+
+
+

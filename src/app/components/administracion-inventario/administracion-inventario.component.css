@@ -1,0 +1,32 @@
+#titulo{
+    padding-top: 45px;
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+.nav-tabs{
+border-color: #933dde;  
+}
+
+.nav-tabs:hover {
+    color: #933dde;
+}
+
+.nav-link {
+    color: #999;
+}
+
+.nav-link:hover {
+    color: #933dde;
+    border-top-color: #933dde;
+    border-right-color: #933dde;
+    border-left-color: #933dde;
+
+}
+
+.nav-link:active {
+    background-color: #ccc;
+}
+

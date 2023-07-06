@@ -1,0 +1,114 @@
+<!--Autor: Erik Daniel ME-->
+
+<!--Barra de busqueda-->
+<div  style="padding-top: 20px;">
+  <div class="wave-group">
+    <input required="" type="text" class="input">
+    <span class="bar"></span>
+    <label class="label">
+      <span class="label-char" style="--index: 0">U</span>
+      <span class="label-char" style="--index: 1">s</span>
+      <span class="label-char" style="--index: 2">u</span>
+      <span class="label-char" style="--index: 3">a</span>
+      <span class="label-char" style="--index: 4">r</span>
+      <span class="label-char" style="--index: 5">i</span>
+      <span class="label-char" style="--index: 6">o</span>
+    </label>
+  </div>
+</div>
+
+   
+<div style=" display: flex;flex-wrap: wrap;"> <!--Div donde se le da el estilo flex para poderlo acomodar como esta-->
+  <div class="card-group"  style=" flex-basis: calc(33.33% - 10px);
+  text-align: center; 
+  margin-right: 10px; /* Establecer un espacio entre los elementos */
+  margin-bottom: 10px; /* Establecer un espacio entre las filas */
+  padding: 10px;"><!--Estilo del acomodo de las cards-->
+    <div class="card"> <!--Card-->
+      <img  width="70%" height="50%" id="img">
+      <hr>
+      <div class="card-body">
+        <h5 class="card-title">Erik Daniel Méndez</h5>
+        <p class="card-text"><small class="text-muted">Administración regional</small></p>
+        <button type="button" style="margin-right: 5px;" routerLink="/Ver-usuarios" class="btn btn-outline-secondary">Ver</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-right: 5px;" class="btn btn-outline-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-group"  style=" flex-basis: calc(33.33% - 10px);
+  text-align: center; 
+  margin-right: 10px; /* Establecer un espacio entre los elementos */
+  margin-bottom: 10px; /* Establecer un espacio entre las filas */
+  padding: 10px;"><!--Estilo del acomodo de las cards-->
+    <div class="card"> <!--Card-->
+      <img  width="70%" height="50%" id="img">
+      <hr>
+      <div class="card-body">
+        <h5 class="card-title">Nombre de usuario</h5>
+        <p class="card-text"><small class="text-muted">Rol</small></p>
+     
+        <button type="button" style="margin-right: 5px;" routerLink="/Ver-usuarios" class="btn btn-outline-secondary">Ver</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-right: 5px;" class="btn btn-outline-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-group"  style=" flex-basis: calc(33.33% - 10px);
+  text-align: center; 
+  margin-right: 10px; /* Establecer un espacio entre los elementos */
+  margin-bottom: 10px; /* Establecer un espacio entre las filas */
+  padding: 10px;"><!--Estilo del acomodo de las cards-->
+    <div class="card"> <!--Card-->
+      <img  width="70%" height="50%" id="img">
+      <hr>
+      <div class="card-body">
+        <h5 class="card-title">Nombre de usuario</h5>
+        <p class="card-text"><small class="text-muted">Rol</small></p>
+      
+        <button type="button" style="margin-right: 5px;" routerLink="/Ver-usuarios" class="btn btn-outline-secondary">Ver</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-right: 5px;" class="btn btn-outline-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-group"  style=" flex-basis: calc(33.33% - 10px);
+  text-align: center; 
+  margin-right: 10px; /* Establecer un espacio entre los elementos */
+  margin-bottom: 10px; /* Establecer un espacio entre las filas */
+  padding: 10px;"><!--Estilo del acomodo de las cards-->
+    <div class="card"> <!--Card-->
+      <img  width="70%" height="50%" id="img">
+      <hr>
+      <div class="card-body">
+        <h5 class="card-title">Nombre de usuario</h5>
+        <p class="card-text"><small class="text-muted">Rol</small></p>
+        
+        <button type="button" style="margin-right: 5px;" routerLink="/Ver-usuarios" class="btn btn-outline-secondary">Ver</button>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-right: 5px;" class="btn btn-outline-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">¿Eliminar usuario?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Se eliminará el siguiente usuario
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" style="margin-right: 5px;" class="btn btn-outline-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>

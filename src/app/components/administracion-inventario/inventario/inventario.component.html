@@ -1,0 +1,109 @@
+<!--Autor: Erik Daniel ME-->
+<!--Barra de busqueda-->
+<div  style="padding-top: 20px;">
+  <div class="wave-group">
+    <input required="" type="text" class="input">
+    <span class="bar"></span>
+    <label class="label">
+      <span class="label-char" style="--index: 0">P</span>
+      <span class="label-char" style="--index: 1">r</span>
+      <span class="label-char" style="--index: 2">o</span>
+      <span class="label-char" style="--index: 3">d</span>
+      <span class="label-char" style="--index: 4">u</span>
+      <span class="label-char" style="--index: 5">c</span>
+      <span class="label-char" style="--index: 6">t</span>
+      <span class="label-char" style="--index: 7">o</span>
+    </label>
+  </div>
+</div>
+
+
+<!--Card donde se encuntra la tabla-->
+<div id="formulario" style="padding-top: 50px;">
+    <div class="card"><!--Card-->
+        <table class="table"><!--Tabla-->
+            <thead><!--Cabecera de la tabla-->
+              <tr>
+                <th scope="col">Imagen</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Proveedor</th>
+                <th scope="col">Categoría</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider"><!--Cuerpo de la tabla-->
+              <tr>
+                <th scope="row"><img data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;" class="card-img-top"  width="60px"
+                    height="70px"></th>
+                <td><a class="nav-link active" aria-current="page" routerLink="/Producto">Producto 1</a></td>
+                <td>10</td>
+                <td>Proveedor 1</td>
+                <td> Modem </td>
+
+                <td id="botones">
+            <button class="btn btn-outline-warning" routerLink="/Editar-producto" style="margin-right: 2px; width: 100px;"
+            ><i class="fa-solid fa-pen-to-square"></i>Editar</button>
+
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-danger" style="width: 100px;"><i
+              class="fa-solid fa-trash"></i>Eliminar</button>
+                </td>
+
+              </tr>
+              <tr>
+                <th scope="row"><img data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;" class="card-img-top"  width="60px"
+                    height="70px"></th>
+                    <td><a class="nav-link active" aria-current="page" routerLink="/">Producto 2</a></td>
+                <td>10</td>
+                <td>Proveedor 2</td>
+                <td>Modem</td>
+                <td>
+   <button class="btn btn-outline-warning" routerLink="/Editar-producto" style="margin-right: 2px; width: 100px;"
+            ><i class="fa-solid fa-pen-to-square"></i>Editar</button>
+
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-danger" style="width: 100px;"><i
+              class="fa-solid fa-trash"></i>Eliminar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row"><img data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;" class="card-img-top"  width="60px"
+                    height="70px"></th>
+                    <td><a class="nav-link active" aria-current="page" routerLink="/">Producto 3</a></td>
+                <td>12</td>
+                <td>Proveedor 3</td>
+                <td>Modem</td>
+                <td>
+                    <button class="btn btn-outline-warning" routerLink="/Editar-producto" style="margin-right: 2px; width: 100px;"
+                    ><i class="fa-solid fa-pen-to-square"></i>Editar</button>
+        
+                  <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-danger" style="width: 100px;"><i
+                      class="fa-solid fa-trash"></i>Eliminar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+   
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">¿Eliminar producto?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Se eliminará el siguiente producto
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" style="margin-right: 5px;" class="btn btn-outline-danger">Eliminar</button>
+      </div>
+    </div>
+  </div>
+</div>

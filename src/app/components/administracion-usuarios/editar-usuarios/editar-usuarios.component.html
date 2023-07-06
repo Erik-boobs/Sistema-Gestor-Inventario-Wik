@@ -1,0 +1,91 @@
+<!--Autor: Erik Daniel ME-->
+<!--Botón para volver-->
+<div class="container" style="padding-top: 10px;">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-end">
+                <button  id="boton" routerLink="/Perfil">
+                    <i class="fa-solid fa-arrow-left" style="padding-right: 3px;"></i> Volver
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Formulario-->
+<div id="formulario" >
+    <div class="card">
+      <div class="card-header">
+        <div class="text-header"></div>
+      </div>
+      <div class="card-body">
+        <form >
+          <!--nombre-->
+          <div class="input">
+            <input autocomplete="off" type="text" id="nombre" name="nombre"
+              required value="Erik Daniel">
+            <label for="nombreProveedor">Nombres</label>
+          </div>
+          <!--Apellido Paterno-->
+          <div class="input">
+            <input autocomplete="off" type="text" id="apellidoP" name="apellidoP"
+              required value="Méndez">
+            <label for="Apellido paterno">Apellido paterno</label>
+          </div>
+<!-- Apellido Materno-->
+          <div class="input">
+            <input autocomplete="off" type="text" id="apellidoM" name="apellidoM"
+              required value="Enríquez">
+            <label for="Apellido materno">Apellido materno</label>
+          </div>
+
+          <!--Fecha de nacimiento-->
+          <div class="input">
+            <input autocomplete="off" type="date" id="fecha" name="fecha"
+              required value="2001-10-06">
+            <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+          </div>
+
+          <!--Telefono-->
+          <div class="input">
+            <input autocomplete="off" type="number" id="telefono" name="telefono"
+              required value="4181552063">
+            <label for="Telefono">Telefono</label>
+          </div>
+
+          <!--Email-->
+          <div class="input">
+            <input autocomplete="off" type="email" id="email" name="email"
+              required value="erikmendex840@gmail.com">
+            <label for="Correo Electrónico">Correo Electrónico</label>
+          </div>
+         
+          <!--Dropdown para elegir el rol-->
+          <div aria-label="Default select example" id="dropdown">
+            <label id="categoria">Rol</label>
+            <select style="border: 20px;border: 1px solid #999;"  id="nombreProvedor" name="nombreProvedor"  required>
+            <option class="form-select" value="" disable selected>-- Selecciona un rol</option>
+            <option class="form-select" > Opción 1</option>
+            <option class="form-select" > Opción 2</option>
+            </select>
+          </div>
+         
+          
+       
+         
+          
+      
+
+        </form>
+
+        <div class="botones" style="display: flex;justify-content: space-evenly;">
+          <!--Crear-->
+          <button class="btn btn-outline-success" style="margin-right: 2px; width: 100px;"
+          >Guardar</button>
+          <!--Cancelar-->
+        </div>
+
+      </div>
+    </div>
+  </div>
