@@ -11,7 +11,7 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { AgregarProductoComponent } from './components/administracion-inventario/agregar-producto/agregar-producto.component';
 import { InventarioComponent } from './components/administracion-inventario/inventario/inventario.component';
 import { AsignarProductosComponent } from './components/administracion-inventario/asignar-productos/asignar-productos.component';
-import { ReportesVentaComponent } from './components/administracion-inventario/reportes-venta/reportes-venta.component';
+
 import { UsuariosComponent } from './components/administracion-usuarios/usuarios/usuarios.component';
 import { AgregarUsuariosComponent } from './components/administracion-usuarios/agregar-usuarios/agregar-usuarios.component';
 import { AsignarUsuariosComponent } from './components/administracion-usuarios/asignar-usuarios/asignar-usuarios.component';
@@ -19,6 +19,7 @@ import { EditarProductoComponent } from './components/administracion-inventario/
 import { EditarUsuariosComponent } from './components/administracion-usuarios/editar-usuarios/editar-usuarios.component';
 import { VerUsuariosComponent } from './components/administracion-usuarios/ver-usuarios/ver-usuarios.component';
 import { ProductoComponent } from './components/administracion-inventario/producto/producto.component';
+import { ReportesComponent } from './components/administracion-usuarios/reportes/reportes.component';
 
 @NgModule({
   declarations: [
@@ -30,15 +31,15 @@ import { ProductoComponent } from './components/administracion-inventario/produc
     PerfilComponent,
     AgregarProductoComponent,
     InventarioComponent,
-    AsignarProductosComponent,
-    ReportesVentaComponent,
     UsuariosComponent,
     AgregarUsuariosComponent,
     AsignarUsuariosComponent,
     EditarProductoComponent,
     EditarUsuariosComponent,
     VerUsuariosComponent,
-    ProductoComponent
+    ProductoComponent,
+    AsignarProductosComponent,
+    ReportesComponent
   ],
   imports: [
     BrowserModule,
