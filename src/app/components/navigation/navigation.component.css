@@ -82,3 +82,19 @@
     fill: #a133f0;
     transition: .3s ease;
   }
+
+  
+  .btn-outline-secondary{
+    border-color: #933dde;
+    color: #933dde;
+    border-radius: 12px;
+  }
+
+  .btn-outline-secondary:hover{
+    color: white;
+    background-color: #933dde;
+  }
+
+  .btn-outline-danger{
+    border-radius: 12px;
+  }

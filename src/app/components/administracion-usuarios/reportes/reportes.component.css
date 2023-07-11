@@ -1,0 +1,76 @@
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+   }
+
+   .cards{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+   }
+
+
+
+   .btn-outline-success{
+    border-color: #933dde;
+    color: #933dde;
+    border-radius: 12px;
+  }
+
+  .btn-outline-success:hover{
+    color: white;
+    background-color: #933dde;
+  }
+
+  /*Botones de administración*/
+  #boton {
+    font-size: 18px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #933dde;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    padding-top: 20px;
+   
+  }
+  
+  #boton:focus,
+  #boton:hover {
+    color: grey;
+  }
+  
+  #boton:focus:after,
+  #boton:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  #boton:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #933dde;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
